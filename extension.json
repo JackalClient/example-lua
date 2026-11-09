@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "id": "example-lua",
+  "name": "Lua Starter",
+  "version": "1.0.0",
+  "publisher": "Wormwaker",
+  "description": {"en": "A Lua module that displays FPS and watches Clock.", "zh": "显示 FPS 并观察 Clock 的 Lua 入门模块。"},
+  "icon": "icon",
+  "tags": ["Example", "Lua"],
+  "files": {
+    "main": {"path": "main.lua", "kind": "data", "architecture": "any"},
+    "dictionary": {"path": "Dictionary.txt", "kind": "data", "architecture": "any"},
+    "icon": {
+      "path": "script.png",
+      "kind": "data",
+      "architecture": "any",
+      "size": 1645,
+      "sha256": "f7adc072b0dee1ce17fbcff32878de8e75e2ee064f7731362a42b1b0ccf5de7d"
+    }
+  },
+  "script": {"language": "lua", "entry": "main"},
+  "contributes": {"Dictionary": ["dictionary"]},
+  "modules": [{
+    "key": "starter",
+    "name": "LuaStarter",
+    "displayName": {"en": "Lua Starter", "zh": "Lua 入门示例"},
+    "description": {"en": "Shows FPS on enable and reports changes to Clock.", "zh": "启用时显示 FPS，运行期间提示 Clock 的开关变化。"},
+    "category": "Misc",
+    "defaults": {"Enabled": false, "Lua Greeting": "Hello from Lua"},
+    "pollIntervalMs": 100,
+    "behaviors": {"enable": "on_enable", "disable": "on_disable", "update": "on_update"}
+  }]
+}
