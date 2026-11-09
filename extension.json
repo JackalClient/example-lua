@@ -8,8 +8,8 @@
   "icon": "icon",
   "tags": ["Example", "Lua"],
   "files": {
-    "main": {"path": "main.lua", "kind": "data", "architecture": "any"},
-    "dictionary": {"path": "Dictionary.txt", "kind": "data", "architecture": "any"},
+    "main": {"path": "main.lua", "kind": "data", "architecture": "any", "size": 711, "sha256": "0cd8b3b763395995263d328005f89346dd437ed26740236c4c5590189454c757"},
+    "dictionary": {"path": "Dictionary.txt", "kind": "data", "architecture": "any", "size": 27, "sha256": "19d1af1f2bf1cebd3aceca9967c1d80324ae1dd4595e624b8c06db266e1fd291"},
     "icon": {
       "path": "script.png",
       "kind": "data",

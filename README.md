@@ -50,14 +50,14 @@ HTTP、按键、客户端权限、隐私窗口和 Custom HUD 的调用方法见�
 
 首次导入即可开启模块。修改脚本后，删除已安装扩展并重启客户端，再导入修改后的文件夹。运行错误会提示脚本位置；模块设置保存在当前配置档案。
 
-本示例源码清单省略文件校验值，适合本地导入。发布时，为 `files` 中每个文件填写 `size` 与 `sha256`；若修改了带校验值的文件，也要重新计算。例如：
+本示例清单已为全部运行文件填写 `size` 与 `sha256`，可直接用于下载和本地导入。修改脚本、词典或图标后，需重新计算相应文件的字节数与 SHA-256。目录中的 `.gitattributes` 保持 Git 保存的运行文件字节与校验值一致。例如：
 
 ```powershell
 (Get-Item -LiteralPath ./main.lua).Length
 (Get-FileHash -LiteralPath ./main.lua -Algorithm SHA256).Hash.ToLowerInvariant()
 ```
 
-将 `extension.json`、`main.lua` 和 `Dictionary.txt` 放在发布包根目录。SDK 和 README 是开发参考资料，可随源码仓库保留。
+将 `extension.json`、`main.lua`、`Dictionary.txt` 和 `script.png` 放在发布包根目录。SDK 和 README 是开发参考资料，可随源码仓库保留。
 
 如果使用完整客户端源码仓库，可在仓库根目录自动打包：
 
