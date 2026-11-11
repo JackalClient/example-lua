@@ -4,6 +4,7 @@
   "name": "Lua Starter",
   "version": "1.0.0",
   "publisher": "Wormwaker",
+  "github": "https://github.com/JackalClient/example-lua",
   "description": {"en": "A Lua module that displays FPS and watches Clock.", "zh": "显示 FPS 并观察 Clock 的 Lua 入门模块。"},
   "icon": "icon",
   "tags": ["Example", "Lua"],
